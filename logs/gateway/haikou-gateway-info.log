@@ -577,3 +577,166 @@
 2022-10-20 15:49:14.655 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2022-10-20 15:49:14.658 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
 2022-10-20 15:49:15.871 [pool-1-thread-1] INFO  com.huwo.gateway.handler.HwOrderEventHandler - 收到呼我订单事件：STATE_ORDER_EXECUTE,数据：{"actFee":192,"actFeeP":240,"actionEvent":"STATE_ORDER_EXECUTE","actionEventDate":1666247707858,"appoint":true,"appointDate":1666245600000,"bizType":3,"carPoolNum":2,"carType":3,"childNumber":0,"confirmTime":1666243563000,"cooperationFee":0,"createDate":1666243534000,"customerDeviceID":"","daccountFee":0,"dateFrom":1666242000000,"dateTo":1666245600000,"departmentId":208,"description":"","discount":0,"distance":240000,"driverId":291182,"elatitude":"28.564116","elocation":"沿河","elongitude":"108.503181","fee":240,"fromAirport":false,"isKcMaster":false,"lineId":"1981","masterId":11910267,"membershipId":1,"orderArea":"贵州省-铜仁市-碧江区","orderCity":"0856","orderId":11910265,"orderNo":"PC1582966230348206080","orderSource":4,"other":"false","otherName":"本人","otherPhone":"18285625918","pLatitude":"28.253426","pLocation":"重庆市秀山土家族苗族自治县S63秀松高速靠近S15松从高速","pLongitude":"109.082553","payDate":1666243562000,"payType":3,"pcType":0,"pickType":"2","platformFee":0,"slatitude":"27.731735","slocation":"铜仁","slongitude":"109.189537","startDate":1666247708000,"state":5,"toAirport":false,"type":2}
+2022-10-20 16:28:38.298 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-20 16:28:38.311 [main] INFO  com.huwo.gateway.HuwoGatewayApplication - Starting HuwoGatewayApplication using Java 1.8.0_333 on liuchang with PID 32536 (D:\huwo-gateway\target\classes started by 27806 in D:\huwo-gateway)
+2022-10-20 16:28:38.312 [main] INFO  com.huwo.gateway.HuwoGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-20 16:28:39.251 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-20 16:28:39.252 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-10-20 16:28:39.269 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 MongoDB repository interfaces.
+2022-10-20 16:28:39.280 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-20 16:28:39.281 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-20 16:28:39.295 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2022-10-20 16:28:39.664 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 16:28:39.667 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$6c3e9bc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 16:28:39.691 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 16:28:39.931 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-10-20 16:28:39.947 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-20 16:28:39.948 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-10-20 16:28:39.948 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-20 16:28:40.069 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-10-20 16:28:40.069 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1702 ms
+2022-10-20 16:28:40.177 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2022-10-20 16:28:40.285 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2022-10-20 16:28:40.287 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Starting...
+2022-10-20 16:28:40.350 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Start completed.
+2022-10-20 16:28:40.351 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2022-10-20 16:28:40.356 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave_1] success
+2022-10-20 16:28:40.356 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2022-10-20 16:28:41.961 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "x86", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_333-b02"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@13019c], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@66f1bd]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@1ae6c18], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-10-20 16:28:41.966 [cluster-ClusterId{value='635106b982096c16f99512f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:294}] to localhost:27017
+2022-10-20 16:28:41.966 [cluster-rtt-ClusterId{value='635106b982096c16f99512f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:293}] to localhost:27017
+2022-10-20 16:28:41.966 [cluster-ClusterId{value='635106b982096c16f99512f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11542600}
+2022-10-20 16:28:42.469 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-20 16:28:42.689 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-10-20 16:28:42.699 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-20 16:28:43.085 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: []
+2022-10-20 16:28:43.085 [org.springframework.kafka.KafkaListenerEndpointContainer#1-2-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: []
+2022-10-20 16:28:43.085 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: []
+2022-10-20 16:28:43.085 [org.springframework.kafka.KafkaListenerEndpointContainer#1-1-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: []
+2022-10-20 16:28:43.093 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: [callmeappgps-0]
+2022-10-20 16:28:43.101 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: [orders-flume-new-0]
+2022-10-20 16:28:43.436 [main] INFO  com.huwo.gateway.HuwoGatewayApplication - Started HuwoGatewayApplication in 5.588 seconds (JVM running for 6.356)
+2022-10-20 16:28:52.643 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-20 16:28:52.643 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-10-20 16:28:52.644 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-10-20 16:28:54.422 [kafka-producer-network-thread | producer-1] INFO  com.huwo.gateway.controller.TestController - 数据发送成功,成功数据为{
+    "actFee": 192, 
+    "actFeeP": 240, 
+    "actionEvent": "STATE_ORDER_EXECUTE", 
+    "actionEventDate": 1666247707858, 
+    "appoint": true, 
+    "appointDate": 1666245600000, 
+    "bizType": 3, 
+    "carPoolNum": 2, 
+    "carType": 3, 
+    "childNumber": 0, 
+    "confirmTime": 1666243563000, 
+    "cooperationFee": 0, 
+    "createDate": 1666243534000, 
+    "customerDeviceID": "", 
+    "daccountFee": 0, 
+    "dateFrom": 1666242000000, 
+    "dateTo": 1666245600000, 
+    "departmentId": 208, 
+    "description": "", 
+    "discount": 0, 
+    "distance": 240000, 
+    "driverId": 291182, 
+    "elatitude": "28.564116", 
+    "elocation": "沿河", 
+    "elongitude": "108.503181", 
+    "fee": 240, 
+    "fromAirport": false, 
+    "isKcMaster": false, 
+    "lineId": "1981", 
+    "masterId": 11910267, 
+    "membershipId": 1, 
+    "orderArea": "贵州省-铜仁市-碧江区", 
+    "orderCity": "0856", 
+    "orderId": 11910265, 
+    "orderNo": "PC1582966230348206080", 
+    "orderSource": 4, 
+    "other": "false", 
+    "otherName": "本人", 
+    "otherPhone": "18285625918", 
+    "pLatitude": "28.253426", 
+    "pLocation": "重庆市秀山土家族苗族自治县S63秀松高速靠近S15松从高速", 
+    "pLongitude": "109.082553", 
+    "payDate": 1666243562000, 
+    "payType": 3, 
+    "pcType": 0, 
+    "pickType": "2", 
+    "platformFee": 0, 
+    "slatitude": "27.731735", 
+    "slocation": "铜仁", 
+    "slongitude": "109.189537", 
+    "startDate": 1666247708000, 
+    "state": 5, 
+    "toAirport": false, 
+    "type": 2
+}
+2022-10-20 16:28:56.899 [pool-1-thread-1] INFO  com.huwo.gateway.handler.HwOrderEventHandler - 收到呼我订单事件：STATE_ORDER_EXECUTE,数据：{"actFee":192,"actFeeP":240,"actionEvent":"STATE_ORDER_EXECUTE","actionEventDate":1666247707858,"appoint":true,"appointDate":1666245600000,"bizType":3,"carPoolNum":2,"carType":3,"childNumber":0,"confirmTime":1666243563000,"cooperationFee":0,"createDate":1666243534000,"customerDeviceID":"","daccountFee":0,"dateFrom":1666242000000,"dateTo":1666245600000,"departmentId":208,"description":"","discount":0,"distance":240000,"driverId":291182,"elatitude":"28.564116","elocation":"沿河","elongitude":"108.503181","fee":240,"fromAirport":false,"isKcMaster":false,"lineId":"1981","masterId":11910267,"membershipId":1,"orderArea":"贵州省-铜仁市-碧江区","orderCity":"0856","orderId":11910265,"orderNo":"PC1582966230348206080","orderSource":4,"other":"false","otherName":"本人","otherPhone":"18285625918","pLatitude":"28.253426","pLocation":"重庆市秀山土家族苗族自治县S63秀松高速靠近S15松从高速","pLongitude":"109.082553","payDate":1666243562000,"payType":3,"pcType":0,"pickType":"2","platformFee":0,"slatitude":"27.731735","slocation":"铜仁","slongitude":"109.189537","startDate":1666247708000,"state":5,"toAirport":false,"type":2}
+2022-10-20 17:59:56.330 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-20 17:59:56.337 [main] INFO  com.huwo.gateway.HuwoGatewayApplication - Starting HuwoGatewayApplication using Java 1.8.0_333 on liuchang with PID 63128 (D:\huwo-gateway\target\classes started by 27806 in D:\huwo-gateway)
+2022-10-20 17:59:56.338 [main] INFO  com.huwo.gateway.HuwoGatewayApplication - The following 1 profile is active: "dev"
+2022-10-20 17:59:57.405 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-20 17:59:57.406 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-10-20 17:59:57.420 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2022-10-20 17:59:57.427 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-20 17:59:57.428 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-20 17:59:57.442 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2022-10-20 17:59:57.935 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 17:59:57.937 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$11987496] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 17:59:57.950 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 17:59:58.224 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-10-20 17:59:58.234 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-20 17:59:58.234 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-10-20 17:59:58.234 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-20 17:59:58.392 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-10-20 17:59:58.392 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1986 ms
+2022-10-20 17:59:58.555 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2022-10-20 17:59:58.703 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2022-10-20 17:59:58.708 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Starting...
+2022-10-20 17:59:58.774 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Start completed.
+2022-10-20 17:59:58.774 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2022-10-20 17:59:58.777 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave_1] success
+2022-10-20 17:59:58.777 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2022-10-20 18:00:00.513 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "x86", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_333-b02"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@1cacc87], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@1c6c10f]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@1dcbbbc], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-10-20 18:00:00.518 [cluster-ClusterId{value='63511c2078ac1446b077f4b5', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:296}] to localhost:27017
+2022-10-20 18:00:00.518 [cluster-rtt-ClusterId{value='63511c2078ac1446b077f4b5', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:295}] to localhost:27017
+2022-10-20 18:00:00.518 [cluster-ClusterId{value='63511c2078ac1446b077f4b5', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13265900}
+2022-10-20 18:00:00.941 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-20 18:00:01.138 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-10-20 18:00:01.146 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-20 18:00:01.548 [org.springframework.kafka.KafkaListenerEndpointContainer#1-1-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: []
+2022-10-20 18:00:01.548 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: []
+2022-10-20 18:00:01.548 [org.springframework.kafka.KafkaListenerEndpointContainer#1-2-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: []
+2022-10-20 18:00:01.548 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: []
+2022-10-20 18:00:01.557 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: [callmeappgps-0]
+2022-10-20 18:00:01.567 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - javagroup: partitions assigned: [orders-flume-new-0]
+2022-10-20 18:00:01.936 [main] INFO  com.huwo.gateway.HuwoGatewayApplication - Started HuwoGatewayApplication in 6.161 seconds (JVM running for 7.273)
+2022-10-20 18:00:38.074 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-20 18:00:38.090 [main] INFO  com.huwo.gateway.HuwoGatewayApplication - Starting HuwoGatewayApplication using Java 1.8.0_333 on liuchang with PID 58456 (D:\huwo-gateway\target\classes started by 27806 in D:\huwo-gateway)
+2022-10-20 18:00:38.091 [main] INFO  com.huwo.gateway.HuwoGatewayApplication - The following 1 profile is active: "test"
+2022-10-20 18:00:38.906 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-20 18:00:38.907 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-10-20 18:00:38.919 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2022-10-20 18:00:38.926 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-20 18:00:38.927 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-20 18:00:38.940 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2022-10-20 18:00:39.224 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 18:00:39.226 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$a331c72f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 18:00:39.236 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-20 18:00:39.409 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-10-20 18:00:39.414 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-10-20 18:00:39.415 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-10-20 18:00:39.415 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-20 18:00:39.529 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-10-20 18:00:39.529 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1385 ms
+2022-10-20 18:00:39.618 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2022-10-20 18:00:39.743 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2022-10-20 18:00:39.745 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Starting...
+2022-10-20 18:00:39.813 [main] INFO  com.zaxxer.hikari.HikariDataSource - slave_1 - Start completed.
+2022-10-20 18:00:39.814 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2022-10-20 18:00:39.814 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave_1] success
+2022-10-20 18:00:39.815 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]

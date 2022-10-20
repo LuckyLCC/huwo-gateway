@@ -1,0 +1,86 @@
+spring:
+  application:
+    name: admin-order
+
+
+  kafka:
+    producer: # producer 生产者
+      retries: 0 # 重试次数
+      acks: 1 # 应答级别:多少个分区副本备份完成时向生产者发送ack确认(可选0、1、all/-1)
+      batch-size: 16384 # 批量大小
+      buffer-memory: 33554432 # 生产端缓冲区大小
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      #      value-serializer: com.itheima.demo.config.MySerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      bootstrap-servers: 192.168.202.102:9092,192.168.202.103:9092,192.168.202.104:9092
+
+
+    consumer: # consumer消费者
+      group-id: javagroup # 默认的消费组ID
+      enable-auto-commit: true # 是否自动提交offset
+      auto-commit-interval: 100  # 提交offset延时(接收到消息后多久提交offset)
+
+      # earliest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，从头开始消费
+      # latest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，消费新产生的该分区下的数据
+      # none:topic各分区都存在已提交的offset时，从offset后开始消费；只要有一个分区不存在已提交的offset，则抛出异常
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #      value-deserializer: com.itheima.demo.config.MyDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+      concurrency: 3
+      bootstrap-servers: 192.168.202.102:9092,192.168.202.103:9092,192.168.202.104:9092
+#      bootstrap-servers: namenode1.callme:6667,namenode2.callme:6667,namenode3.callme:6667
+
+
+  redis:
+    host: 172.29.0.236
+    port: 6381
+    database: 3
+    timeout: 4000
+    password: huwoRadis
+    jedis:
+      pool:
+        max-wait: -1
+        max-active: -1
+        max-idle: 20
+        min-idle: 10
+
+
+    #  mysql:
+#    hw:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      jdbc-url: jdbc:mysql://pe-mirror.hds.huwo.tech:3306/callme?useSSL=false&autoReconnect=true
+#      username: upstream
+#      password: 2dMce5zYuUM5
+#    online:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      jdbc-url: jdbc:mysql://172.29.0.202:3306/hw_datapowered
+#      username: datapowered
+#      password: HTUgMc4D5kTm
+
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        master:
+          url: jdbc:mysql://192.168.202.102:3306/callme?useSSL=false&autoReconnect=true&characterEncoding=utf-8
+          username: root
+          password: Mysql@123
+          driver-class-name: com.mysql.cj.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        slave_1:
+          url: jdbc:mysql://pe-mirror.hds.huwo.tech:3306/callme?useSSL=false&autoReconnect=true
+          username: upstream
+          password: 2dMce5zYuUM5
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        #......省略
+        #以上会配置一个默认库master，一个组slave下有两个子库slave_1,slave_2
+plateFormName: HW
+
+
+server:
+  port: 8080
+
+
+
+
