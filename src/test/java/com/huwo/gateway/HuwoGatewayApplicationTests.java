@@ -46,7 +46,7 @@ class HuwoGatewayApplicationTests {
 
     @Test
     void start1() {
-        UpstreamBaseConfig build = UpstreamBaseConfig.builder().adCode("100000").cityName("国家").isUpFlag(true).build();
+        UpstreamBaseConfig build = UpstreamBaseConfig.builder().adCode("520600").cityName("国家").isUpFlag(true).build();
         upstreamBaseConfigService.save(build);
     }
     @Test

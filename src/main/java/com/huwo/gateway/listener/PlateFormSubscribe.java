@@ -76,6 +76,6 @@ public class PlateFormSubscribe implements MessageListener {
                 concurrentHashMap.putIfAbsent(plateForm.getChannel(), plateForm);
             }
         }
-        System.out.println(JSON.toJSONString(concurrentHashMap));
+        System.out.println("平台Map为"+JSON.toJSONString(concurrentHashMap));
     }
 }

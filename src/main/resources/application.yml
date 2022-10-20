@@ -28,8 +28,8 @@ spring:
       #      value-deserializer: com.itheima.demo.config.MyDeserializer
       value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
       concurrency: 3
-#      bootstrap-servers: 192.168.202.102:9092,192.168.202.103:9092,192.168.202.104:9092
-      bootstrap-servers: namenode1.callme:6667,namenode2.callme:6667,namenode3.callme:6667
+      bootstrap-servers: 192.168.202.102:9092,192.168.202.103:9092,192.168.202.104:9092
+#      bootstrap-servers: namenode1.callme:6667,namenode2.callme:6667,namenode3.callme:6667
 
 
   redis:

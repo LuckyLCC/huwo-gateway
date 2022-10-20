@@ -1,5 +1,6 @@
 package com.huwo.gateway.config;
 
+import com.huwo.gateway.listener.PlateFormSubscribe;
 import com.huwo.gateway.listener.UpstreamBaseConfigSubscribe;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -52,6 +53,7 @@ public class RedisConfig {
 
         //订阅频道，通配符*表示任意多个占位符
         container.addMessageListener(UpstreamBaseConfigSubscribe.getInstance(), new PatternTopic("upstreambaseconfig"));
+        container.addMessageListener(PlateFormSubscribe.getInstance(), new PatternTopic("plateformsubscribe"));
 
         return container;
     }

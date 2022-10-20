@@ -1,26 +1,30 @@
 package com.huwo.gateway.strategy.order;
 
 import com.alibaba.fastjson.JSON;
-import com.huwo.data.upstream.api.common.ChannelEnum;
 import com.huwo.data.upstream.api.common.IPCTypeEnum;
 import com.huwo.gateway.common.DuBody;
 import com.huwo.gateway.common.HwOrderMessage;
-import com.huwo.gateway.common.HwPositionMessage;
 import com.huwo.gateway.domain.PlateForm;
 import com.huwo.gateway.domain.UpstreamBaseConfig;
 import com.huwo.gateway.listener.PlateFormSubscribe;
 import com.huwo.gateway.listener.UpstreamBaseConfigSubscribe;
 import com.huwo.gateway.utils.KafkaUtils;
-import com.mysql.cj.log.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Slf4j
+@Component
 public abstract class IOrderStrategy implements InitializingBean {
+
+
+    @Value("${plateFormName}")
+    private String plateFormName;
 
     //数据上报
     public void handleAndSendData(HwOrderMessage sourceData, Integer address) {
@@ -36,15 +40,15 @@ public abstract class IOrderStrategy implements InitializingBean {
         if (!CollectionUtils.isEmpty(plateFormMap)) {
             //过滤
             ConcurrentHashMap.KeySetView<String, PlateForm> keys = plateFormMap.keySet();
-            if (keys.contains(ChannelEnum.HW.name())) {
+            if (keys.contains(plateFormName)) {
                 return;
             }
 
         }
 
-        //数据过滤--粗粒度过滤
+        //城市过滤
         ConcurrentHashMap<String, UpstreamBaseConfig> baseMap = UpstreamBaseConfigSubscribe.getInstance().getConcurrentHashMap();
-        if (!CollectionUtils.isEmpty(baseMap) && baseMap.keySet().contains(address)) {
+        if (!CollectionUtils.isEmpty(baseMap) && baseMap.keySet().contains(String.valueOf(address))) {
             //过滤
             return;
         }
