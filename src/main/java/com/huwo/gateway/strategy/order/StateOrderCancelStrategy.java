@@ -11,6 +11,8 @@ import com.huwo.gateway.utils.RTimeUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.Arrays;
 import java.util.List;
 
@@ -34,6 +36,8 @@ public class StateOrderCancelStrategy extends IOrderStrategy {
         body.setChannel(ChannelEnum.HW.name());
         body.setAddress(address);
         body.setData(jsonString);
+        body.setTimeStamp(LocalDateTime.now().toInstant(ZoneOffset.ofHours(8)).toEpochMilli());
+
         return Arrays.asList(body);
     }
 

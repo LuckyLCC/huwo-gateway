@@ -117,7 +117,7 @@ public class PositionDriverStrategy extends IPositionStrategy {
         //组装DuBody
         String jsonString = JSON.toJSONString(positionDriver);
         DuBody body = new DuBody();
-        body.setIpcType(IPCTypeEnum.POSITION_DRIVER.getType());
+        body.setIpcType(IPCTypeEnum.POSITION_VEHICLE.getType());
         body.setChannel(ChannelEnum.HW.name());
         body.setAddress(positionDriver.getDriverRegionCode());
         body.setData(jsonString);
@@ -146,7 +146,7 @@ public class PositionDriverStrategy extends IPositionStrategy {
         //组装DuBody
         String jsonString = JSON.toJSONString(positionVehicle);
         DuBody body = new DuBody();
-        body.setIpcType(IPCTypeEnum.POSITION_VEHICLE.getType());
+        body.setIpcType(IPCTypeEnum.POSITION_DRIVER.getType());
         body.setChannel(ChannelEnum.HW.name());
         body.setAddress(positionVehicle.getVehicleRegionCode());
         body.setData(jsonString);

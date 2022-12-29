@@ -16,5 +16,9 @@ public class DuBody {
     private String noUpstreamCity;
     private Integer address;
     private Long firstUpstreamTime;
+    /**
+     * 用于以后大数据处理，以事件时间语义
+     */
+    private Long timeStamp;
 
 }
